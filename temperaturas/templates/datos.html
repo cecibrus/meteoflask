@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {background-color: plum;font-family: verdana;align-content:center}
+        h2   {text-align: left;color: lightslategray;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+        thead{text-align: center;color:darkmagenta; font-size: 25px; font-family: cursive;display: contents;}
+        tbody{text-align: center;color:magenta; font-size: 20px; font-family:fantasy;display: contents;}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {{data.ciudad}} <!--se cambia el titulo de la pagina de acuerdo a la ciudad-->
+    </title>
+</head>
+<body>
+    <h2>{{data.ciudad}}</h2>
+    <table>
+        <thead><tr>
+            <th>
+                Temperatura     |
+            </th>
+            <th>
+                Velocidad del viento    |      
+            </th>
+            <th>
+                Direccion del viento    
+            </th>
+        </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    {{data.temperatura}}
+                </td>
+                <td>
+                    {{data.velocidad}}
+                </td>
+                <td>
+                    {{data.direccion}}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
